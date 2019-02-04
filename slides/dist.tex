@@ -1,0 +1,64 @@
+\Transcb{yellow}{blue}{Measurement of Cosmological distances in a Flat Universe}
+\onecolumn
+\begin{itemize}
+\item Quite often it is necessary to know the physical distance of a certain object
+\item[] E.g. to determine the actual energy output of a Gamma Ray Burst from observed fluence
+\item WMAP \& Planck measurements : Consistent with a flat universe $\rightarrow k=0$
+\item[] This yields for the Robertson-Walker metric describing a flat universe :
+\item[] {\blue $\qquad \d s^{2}=(c\,\d t)^{2}-a^{2}(t)\left[
+        (\d\sigma)^{2}+\sigma^{2}(\d\theta)^{2}+\sigma^{2}\sin^{2}(\theta)(\d\varphi)^{2}
+        \right]$}
+\item {\red Actual 3D spatial distances can only be measured correctly if $\d t=0$\\
+      (i.e. at the same time)}
+\item[] Due to the finite speed of light this is impossible for cosmological objects
+\item {\blue Can we find an observable which can be related to the physical distance $D$ ?}
+\item[] Use EM radiation for observations $\rightarrow \d s^{2} \equiv 0$
+\item[] Distant galaxies may show emission/absorbtion lines $\rightarrow$ {\blue Use redshift $z$ as observable}
+\item[$\ast$] {\red Can we relate the observed redshift $z$ to the physical distance $D$ ?}
+\item[] Consider a galaxy at comoving radial coordinate $\sigma=\sigma_{e}$ which emits a signal at $t=t_{e}$
+\item[] At the Earth $(\sigma \equiv 0)$ the signal is observed at $t=t_{o}$
+\end{itemize}
+
+\Tr
+\begin{itemize}
+\item Robertson-Walker for a flat universe
+      $\displaystyle \rightarrow {\blue \int_{t_{e}}^{t_{o}} \frac{c}{a(t)}\,\d t=\int_{\sigma_{e}}^{0} \d\sigma}$
+\item For the observed redshift we have :
+      $\displaystyle z(t)=\frac{a(t_{o})}{a(t)}-1
+       \rightarrow \frac{\d z}{\d t}=\frac{-a(t_{0})\dot{a}(t)}{a^{2}(t)}$
+\item[] Replacing $\d t \rightarrow \d z$ the above integrals yield
+        {\blue $\displaystyle \sigma_{e}=\frac{c}{a(t_{o})}
+        \int_{z(t_{e})}^{z(t_{o})} \left(\frac{a(t)}{\dot{a}(t)}\right) \d z$}
+\item Friedmann-LeMa\^{i}tre for a flat universe : {\red $\displaystyle
+      \left[\frac{\dot{a}(t)}{a(t)}\right]^{2}=\frac{8\pi G\rho(t)}{3}+\frac{\Lambda}{3}$}
+\item[$\ast$] Total energy conservation within a comoving volume : $\rho(t)a^{3}(t)=\rho(t_{o})a^{3}(t_{o})$
+\item[] Flat matter-dominated universe : $\rho(t_{o})=\rho_{c,0}\,\Omega_{M} \rightarrow$
+       {\blue $\displaystyle \rho(t)=\left(\frac{a(t_{o})}{a(t)}\right)^{3}\frac{3H_{0}^{2}}{8\pi G}\Omega_{M}$}
+\item[] Using {\blue $\Lambda=3H_{0}^{2}\,\Omega_{\Lambda}$} we obtain : {\red $\displaystyle
+        \left[\frac{\dot{a}(t)}{a(t)}\right]^{2}
+        =H_{0}^{2} \left[\Omega_{M}\left(\frac{a(t_{o})}{a(t)}\right)^{3}+\Omega_{\Lambda}\right]$}
+\end{itemize}
+
+\Tr
+\begin{itemize}
+\item Using {\blue $\displaystyle \frac{a(t_{o})}{a(t)}=1+z$} the {\red Friedmann-Lema\^{i}tre equation
+      for a flat universe} becomes :
+\item[] \begin{center}
+        {\red \shabox{$\displaystyle
+        \left[\frac{\dot{a}(t)}{a(t)}\right]^{2}
+        =H_{0}^{2} \left[\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}\right]$}}
+        \end{center}
+\item From before we had {\blue $\displaystyle \sigma_{e}=\frac{c}{a(t_{o})}
+                            \int_{z(t_{e})}^{z(t_{o})} \left(\frac{a(t)}{\dot{a}(t)}\right) \d z$}
+      so that we finally obtain :
+\item[] \begin{center}
+        {\red \shabox{$\displaystyle \sigma_{e}(z_{obs})=\frac{c}{a(t_{o})H_{0}}
+         \int_{0}^{z_{obs}}\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\, \d z$}}
+        \end{center}
+\item The {\blue physical distance $D(z)$} is obtained from $D(t)=a(t)\,\sigma$ yielding
+\item[] \begin{center}
+        {\red \shabox{$\displaystyle D(z_{obs})=\frac{c}{H_{0}}
+         \int_{0}^{z_{obs}}\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\, \d z$}}
+        \end{center}
+\item[] Note : It is customary to "calibrate" the scale by setting $a(t_{o})=a_{0} \equiv 1$
+\end{itemize}

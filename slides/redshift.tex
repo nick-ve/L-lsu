@@ -1,0 +1,95 @@
+\Transcb{yellow}{blue}{Cosmological redshift}
+\onecolumn
+\begin{itemize}
+\item Expansion of the universe $\rightarrow$ Distant objects should exhibit a redshift
+\item[] Most convenient representation : Comoving coordinates $\rightarrow$ Objects not accelerated
+\item Consider the following events of information transfer via EM radiation
+\item[] A galaxy at comoving coordinate $\sigma=\sigma_{e}$ emits 2 wave crests
+        at $t_{e}$ and $t_{e}+\Delta t_{e}$
+\item[] An observer at comoving coordinate $\sigma=0$ observes the wave crests
+        at $t_{o}$ and $t_{o}+\Delta t_{o}$
+\item[$\ast$] Light travels radially from the galaxy to the observer
+\item[] Robertson-Walker metric
+        $\displaystyle \rightarrow
+        {\blue \d s^{2}=(c\,\d t)^{2}-a^{2}(t)\left[\frac{(\d\sigma)^{2}}{1-k\sigma^{2}}\right] \equiv 0}$
+\item[] which yields for the emission and observation of the 2 wave crests
+\item[] $\displaystyle \int_{t_{e}}^{t_{o}} \frac{c}{a(t)}\,\d t
+         = \int_{\sigma_{e}}^{0} \frac{1}{\sqrt{1-k\sigma^{2}}}\,\d\sigma \qquad
+         \int_{t_{e}+\Delta t_{e}}^{t_{o}+\Delta t_{o}} \frac{c}{a(t)}\,\d t
+         = \int_{\sigma_{e}}^{0} \frac{1}{\sqrt{1-k\sigma^{2}}}\,\d\sigma$\\
+\item[] $\displaystyle \rightarrow {\blue \int_{t_{e}}^{t_{o}} \frac{c}{a(t)}\,\d t =
+         \int_{t_{e}+\Delta t_{e}}^{t_{o}+\Delta t_{o}} \frac{c}{a(t)}\,\d t =
+         \int_{t_{e}}^{t_{o}} \!\!\!\ldots -
+         \int_{t_{e}}^{t_{e}+\Delta t_{e}} \!\!\!\!\!\!\!\!\!\ldots +
+         \int_{t_{o}}^{t_{o}+\Delta t_{o}} \!\!\!\!\!\!\!\!\!\ldots}$
+\end{itemize}
+
+\Tr
+\begin{itemize}
+\item Two consequetive wave crests of EM radiation : $\Delta t=\nu^{-1} \rightarrow \Delta t \ll 1$ sec.
+\item[] which implies {\blue $a(t_{e}+\Delta t_{e}) \approx a(t_{e})$} and
+        {\blue $a(t_{o}+\Delta t_{o}) \approx a(t_{o})$}
+\item[] So we obtain : $\displaystyle \int_{t_{e}}^{t_{e}+\Delta t_{e}} \frac{c}{a(t)}\,\d t =
+        \int_{t_{o}}^{t_{o}+\Delta t_{o}} \frac{c}{a(t)}\,\d t
+        \rightarrow {\red \frac{\Delta t_{e}}{a(t_{e})}=\frac{\Delta t_{o}}{a(t_{o})}}$
+\item[] Using $\displaystyle \Delta t=\frac{1}{\nu}=\frac{\lambda}{c}$ we directly obtain :
+        {\blue $\displaystyle \frac{\lambda_{o}}{\lambda_{e}}=\frac{a(t_{o})}{a(t_{e})}$}
+\item[$\ast$] {\blue Also the wavelength of radiation is stretched by the cosmic scale factor $a(t)$}
+\item The redshift $z$ was defined as
+      $\displaystyle z \equiv \frac{\lambda_{o}-\lambda_{e}}{\lambda_{e}}=\frac{\lambda_{o}}{\lambda_{e}}-1$
+\item[] which yields for the {\blue Cosmological redshift}
+\item[] \begin{center}
+        {\red \shabox{$\displaystyle z=\frac{a(t_{o})}{a(t_{e})}-1$}}
+        \end{center}
+\item Since $t_{o}>t_{e} \rightarrow a(t_{o})>a(t_{e})$ so indeed distant galaxies appear redshifted
+\end{itemize}
+
+\Tr
+\begin{itemize}
+\item Most of the observed redshifts are rather small (e.g. $z<1$)
+\item[] $\rightarrow$ on a cosmological timescale $t_{o} \approx t_{e}$
+\item[] This implies that we can use a Taylor expansion to investigate $a(t_{e})$ w.r.t. $a(t_{o})$
+\item[] $a(t_{e})=a(t_{o})+(t_{e}-t_{o})\dot{a}(t_{o})+\frac{1}{2}(t_{e}-t_{o})^{2}\ddot{a}(t_{o})+\ldots$
+\item Using again {\blue $\displaystyle H(t) \equiv \frac{\dot{a}(t)}{a(t)}$} and
+      {\blue $\displaystyle H_{0} \equiv \frac{\dot{a}(t_{o})}{a(t_{o})}$} we can write {\red for small $z$}
+\item[] \begin{center}
+        {\red \shabox{
+        $a(t_{e})=a_{0}\left[1+H_{0}(t_{e}-t_{o})-\frac{1}{2}q_{0}H_{0}^{2}(t_{e}-t_{o})^{2}+\ldots\right]$
+        }}
+        \end{center}
+\item[] where we have introduced the {\blue deceleration parameter}
+\item[] \begin{center}
+        {\red \shabox{
+        $\displaystyle q(t) \equiv \frac{-\ddot{a}(t)}{H^{2}(t)a(t)}$
+        }}
+        \end{center}
+\item[$\ast$] As usual the present day value is indicated as
+        $\displaystyle q_{0} \equiv \frac{-\ddot{a}(t_{o})}{H^{2}(t_{o})a(t_{o})}=
+        \frac{-\ddot{a}_{0}}{H_{0}^{2}a_{0}}$
+\end{itemize}
+
+\Tr
+\begin{itemize}
+\item Using the previous Taylor expansion we can obtain a similar expression for the redshift
+\item[] \begin{center}
+        {\red \shabox{
+        $z=H_{0}(t_{o}-t_{e})+(1+\frac{1}{2}q_{0})H_{0}^{2}(t_{o}-t_{e})^{2}+\ldots$
+        }}
+        \end{center}
+\item In a similar way we can obtain an expression for the {\blue light travel time}
+\item[] \begin{center}
+        {\red \shabox{
+        $(t_{o}-t_{e})={\displaystyle \frac{1}{H_{0}}}\left[z-(1+\frac{1}{2}q_{0})z^{2}+\ldots\right]$
+        }}
+        \end{center}
+\item[$\ast$] $z$ vs. distance plot : Departure from a straight line for large distances
+\item[] Accurate measurements may enable determination of $q_{0}$
+\item[] Hubble was lucky to have only data from rather nearby $(z \ll 1)$ objects ! 
+\item As mentioned before : these Taylor expansions are only valid for small $z$
+{\red
+\item[$\ast$] Exercise : Consider the Cosmic Microwave Background Radiation (CMBR) which has a
+              blackbody spectrum corresponding currently to a temperature of about 2.73~K.
+\item Show that due to the expansion of the universe the CMBR maintains the blackbody\\
+      spectrum but that the corresponding temperature decreases with time.
+}
+\end{itemize}

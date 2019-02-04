@@ -1,8 +1,3 @@
-# L-lsu
-Introductory lecture on the Large Scale Universe
-
-The Large Scale Universe
-========================
 Observations in the neighbourhood of our Solar system and Galaxy  
 show an irregular distribution of matter.  
 However, if we investigate the Universe on larger and larger scales,  
@@ -28,4 +23,3 @@ Introduction of the concept of cosmological redshift allows interpretation
 of the observations concerning very distant objects (e.g. Gamma Ray Bursts),  
 from which the (astro)physical messengers are significantly affected by the  
 evolution of the Universe on their journey to Earth.  
-
