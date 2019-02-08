@@ -2,7 +2,6 @@
 \onecolumn
 \begin{itemize}
 \item Expansion of the universe $\rightarrow$ Distant objects should exhibit a redshift
-\item[] Most convenient representation : Comoving coordinates $\rightarrow$ Objects not accelerated
 \item Consider the following events of information transfer via EM radiation
 \item[] A galaxy at comoving coordinate $\sigma=\sigma_{e}$ emits 2 wave crests
         at $t_{e}$ and $t_{e}+\Delta t_{e}$
@@ -22,15 +21,17 @@
          \int_{t_{e}}^{t_{o}} \!\!\!\ldots -
          \int_{t_{e}}^{t_{e}+\Delta t_{e}} \!\!\!\!\!\!\!\!\!\ldots +
          \int_{t_{o}}^{t_{o}+\Delta t_{o}} \!\!\!\!\!\!\!\!\!\ldots}$
+\item[] So we obtain : {\red $\displaystyle \int_{t_{e}}^{t_{e}+\Delta t_{e}} \frac{c}{a(t)}\,\d t =
+        \int_{t_{o}}^{t_{o}+\Delta t_{o}} \frac{c}{a(t)}\,\d t$}
 \end{itemize}
 
 \Tr
 \begin{itemize}
-\item Two consequetive wave crests of EM radiation : $\Delta t=\nu^{-1} \rightarrow \Delta t \ll 1$ sec.
+\item Two consecutive wave crests of EM radiation : $\Delta t=\nu^{-1} \rightarrow \Delta t \ll 1$ sec.
 \item[] which implies {\blue $a(t_{e}+\Delta t_{e}) \approx a(t_{e})$} and
         {\blue $a(t_{o}+\Delta t_{o}) \approx a(t_{o})$}
-\item[] So we obtain : $\displaystyle \int_{t_{e}}^{t_{e}+\Delta t_{e}} \frac{c}{a(t)}\,\d t =
-        \int_{t_{o}}^{t_{o}+\Delta t_{o}} \frac{c}{a(t)}\,\d t
+\item[] So we obtain : $\displaystyle \int_{t_{e}}^{t_{e}+\Delta t_{e}} \frac{c}{a(t_{e})}\,\d t =
+        \int_{t_{o}}^{t_{o}+\Delta t_{o}} \frac{c}{a(t_{o})}\,\d t
         \rightarrow {\red \frac{\Delta t_{e}}{a(t_{e})}=\frac{\Delta t_{o}}{a(t_{o})}}$
 \item[] Using $\displaystyle \Delta t=\frac{1}{\nu}=\frac{\lambda}{c}$ we directly obtain :
         {\blue $\displaystyle \frac{\lambda_{o}}{\lambda_{e}}=\frac{a(t_{o})}{a(t_{e})}$}
@@ -46,15 +47,15 @@
 
 \Tr
 \begin{itemize}
-\item Most of the observed redshifts are rather small (e.g. $z<1$)
-\item[] $\rightarrow$ on a cosmological timescale $t_{o} \approx t_{e}$
+\item Most of the observed redshifts are rather small (e.g. $z<0.1$)
+\item[] $\rightarrow a(t_{o}) \approx a(t_{e}) \rightarrow$ on a cosmological timescale $t_{o} \approx t_{e}$
 \item[] This implies that we can use a Taylor expansion to investigate $a(t_{e})$ w.r.t. $a(t_{o})$
 \item[] $a(t_{e})=a(t_{o})+(t_{e}-t_{o})\dot{a}(t_{o})+\frac{1}{2}(t_{e}-t_{o})^{2}\ddot{a}(t_{o})+\ldots$
 \item Using again {\blue $\displaystyle H(t) \equiv \frac{\dot{a}(t)}{a(t)}$} and
       {\blue $\displaystyle H_{0} \equiv \frac{\dot{a}(t_{o})}{a(t_{o})}$} we can write {\red for small $z$}
 \item[] \begin{center}
         {\red \shabox{
-        $a(t_{e})=a_{0}\left[1+H_{0}(t_{e}-t_{o})-\frac{1}{2}q_{0}H_{0}^{2}(t_{e}-t_{o})^{2}+\ldots\right]$
+        $a(t_{e})=a(t_{o})-a(t_{o})\left[H_{0}(t_{o}-t_{e})+\frac{1}{2}q_{0}H_{0}^{2}(t_{o}-t_{e})^{2}+\ldots\right]$
         }}
         \end{center}
 \item[] where we have introduced the {\blue deceleration parameter}
@@ -71,21 +72,29 @@
 \Tr
 \begin{itemize}
 \item Using the previous Taylor expansion we can obtain a similar expression for the redshift
+\item[] $a(t_{o})-a(t_{e})=a(t_{o})\left[H_{0}(t_{o}-t_{e})+\frac{1}{2}q_{0}H_{0}^{2}(t_{o}-t_{e})^{2}+\ldots\right]$
+\item[] with $\displaystyle z=\frac{a(t_{o})}{a(t_{e})}-1=\frac{a(t_{o})-a(t_{e})}{a(t_{e})}$
+        and $\displaystyle \frac{a(t_{o})}{a(t_{e})} \approx 1$ we get
 \item[] \begin{center}
         {\red \shabox{
-        $z=H_{0}(t_{o}-t_{e})+(1+\frac{1}{2}q_{0})H_{0}^{2}(t_{o}-t_{e})^{2}+\ldots$
+        $z=H_{0}(t_{o}-t_{e})+\frac{1}{2}q_{0}H_{0}^{2}(t_{o}-t_{e})^{2}+\ldots$
         }}
         \end{center}
-\item In a similar way we can obtain an expression for the {\blue light travel time}
+\item Using $z \approx H_{0}(t_{o}-t_{e})$ we can obtain an expression for the {\blue light travel time}
 \item[] \begin{center}
         {\red \shabox{
-        $(t_{o}-t_{e})={\displaystyle \frac{1}{H_{0}}}\left[z-(1+\frac{1}{2}q_{0})z^{2}+\ldots\right]$
+        $(t_{o}-t_{e})={\displaystyle \frac{1}{H_{0}}}\left[z-\frac{1}{2}q_{0}z^{2}-\ldots\right]$
         }}
         \end{center}
 \item[$\ast$] $z$ vs. distance plot : Departure from a straight line for large distances
 \item[] Accurate measurements may enable determination of $q_{0}$
 \item[] Hubble was lucky to have only data from rather nearby $(z \ll 1)$ objects ! 
 \item As mentioned before : these Taylor expansions are only valid for small $z$
+\end{itemize}
+
+\Tr
+\onecolumn
+\begin{itemize}
 {\red
 \item[$\ast$] Exercise : Consider the Cosmic Microwave Background Radiation (CMBR) which has a
               blackbody spectrum corresponding currently to a temperature of about 2.73~K.

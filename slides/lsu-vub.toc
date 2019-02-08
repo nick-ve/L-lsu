@@ -1,7 +1,7 @@
 \contentsline {section}{Introduction\vspace *{-10mm}}{1}
-\contentsline {section}{Spatial curvature\vspace *{-10mm}}{2}
-\contentsline {section}{The Robertson-Walker metric\vspace *{-10mm}}{5}
-\contentsline {section}{The Friedmann-LeMa\^{i}tre equation\vspace *{-10mm}}{8}
-\contentsline {section}{Critical density, Dark energy and Cosmological constant\vspace *{-10mm}}{10}
-\contentsline {section}{Cosmological redshift\vspace *{-10mm}}{12}
-\contentsline {section}{Measurement of Cosmological distances in a Flat Universe\vspace *{-10mm}}{16}
+\contentsline {section}{Spatial curvature\vspace *{-10mm}}{4}
+\contentsline {section}{The Robertson-Walker metric\vspace *{-10mm}}{7}
+\contentsline {section}{The Friedmann-LeMa\^{i}tre equation\vspace *{-10mm}}{10}
+\contentsline {section}{Critical density, Dark energy and Cosmological constant\vspace *{-10mm}}{12}
+\contentsline {section}{Cosmological redshift\vspace *{-10mm}}{14}
+\contentsline {section}{Measurement of Cosmological distances in a Flat Universe\vspace *{-10mm}}{19}

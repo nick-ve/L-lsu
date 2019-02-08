@@ -7,9 +7,9 @@
 \item[$\ast$] Metric can be determined in the same way as for the Schwarzschild case
 \item[] Isotropic $\rightarrow$ use spherical coordinates and write {\red spatial metric} as
 \item[] {\blue $\qquad \d s^{2}=f(r)(\d r)^{2}+r^{2}(\d\theta)^{2}+r^{2}\sin^{2}(\theta)(\d\varphi)^{2}$}
-\item Use $\d\theta=0$ and $\theta=\frac{1}{2}\pi$ for simplicity
+\item Reduce to 2-dim. case using $\theta=\frac{1}{2}\pi$ and $\d \theta=0$
       $\rightarrow {\blue \d s^{2}=f(r)(\d r)^{2}+r^{2}(\d\varphi)^{2}}$
-\item[] For this 2D-surface~: $x^{1}=r \quad x^{2}=\varphi
+\item[] For this 2D-surface~: $x_{1}=r \quad x_{2}=\varphi
         \rightarrow {\blue g_{\mu\nu}=\text{diag}(f(r),r^{2})}$
 \item Gauss : $\displaystyle K=\frac{1}{2rf^{2}(r)} \cdot \frac{\d f(r)}{\d r}
                \rightarrow f(r)=\frac{1}{C-Kr^{2}} \quad$ ($C=$ constant)
@@ -29,21 +29,26 @@
 \begin{itemize}
 \item Relation between {\blue radial coordinate $r$} and {\blue physical distance $D(r)$}
 \item[] $\displaystyle D(r)=\int \d s=\int_{0}^{r} \frac{1}{\sqrt{1-Kr^{2}}}\,\d r
-         =\frac{1}{\sqrt{K}} \arcsin(r\sqrt{K})$
+         =\frac{1}{\sqrt{K}} \arcsin(r\sqrt{K}) \quad (K>0)$
 \item[] {\red \shabox{$\displaystyle D(r)=\frac{1}{\sqrt{K}}\arcsin(r\sqrt{K})$}} $\qquad$
         {\red \shabox{$\displaystyle r(D)=\frac{1}{\sqrt{K}}\sin(D\sqrt{K})$}}
 \item Area $A$ of an $r$-sphere : $\displaystyle A=4\pi r^{2}=\frac{4\pi}{K}\sin^{2}(D\sqrt{K})$
 \item[] Small $D \quad (D\sqrt{K} \ll 1) \rightarrow A \approx 4\pi D^{2} \quad$ (Euclidean value)
-\item[] Large $D \quad (D\sqrt{K} \geqq 1) \rightarrow A$ increases more slowly than $4\pi D^{2} \quad (K>0)$
+\item[] Large $D \quad (D\sqrt{K} \geqq 1) \rightarrow A$ increases more slowly than $4\pi D^{2}$
 \item[$\ast$] {\blue In case $K>0$ the area $A$ of an $r$-sphere reaches two extreme values}
-\item[] {\blue $\quad \displaystyle D=\frac{(n+\frac{1}{2})\pi}{\sqrt{K}} \rightarrow  A_{max}=\frac{4\pi}{K}
-         \qquad \qquad D=\frac{n\pi}{\sqrt{K}} \rightarrow A_{min}=0 \qquad (n \in \mathbb{N})$}
+\item[] {\blue $\qquad D\sqrt{K}=(n+\frac{1}{2})\pi \rightarrow  A_{max}=\frac{4\pi}{K} \quad (n \in \mathbb{N})$}
+\item[] {\blue $\qquad D\sqrt{K}=n\pi \rightarrow A_{min}=0$}
 \item[] {\red Positively-curved $(K>0)$ space is closed}
 \end{itemize}
 
 \Tr
 \begin{itemize}
-\item For $K<0$ the area of an $r$-sphere becomes~: $\displaystyle A=\frac{4\pi}{|K|}\sinh^{2}(D\sqrt{|K|})$
+\item For $K<0$ we get
+\item[] $\displaystyle D(r)=\int \d s=\int_{0}^{r} \frac{1}{\sqrt{1+|K|r^{2}}}\,\d r
+         =\frac{1}{\sqrt{|K|}} {\rm \,arcsinh}(r\sqrt{|K|})$
+\item[] {\red \shabox{$\displaystyle D(r)=\frac{1}{\sqrt{|K|}}{\rm \,arcsinh}(r\sqrt{|K|})$}} $\qquad$
+        {\red \shabox{$\displaystyle r(D)=\frac{1}{\sqrt{|K|}}\sinh(D\sqrt{|K|})$}}
+\item So the area of an $r$-sphere becomes~: $\displaystyle A=\frac{4\pi}{|K|}\sinh^{2}(D\sqrt{|K|})$
 \item[] $A$ increases faster than in flat space
 \item[] $A$ increases to $\infty$ when $D \rightarrow \infty$
 \item[$\ast$] {\red Negatively-curved $(K<0)$ space is open}

@@ -11,54 +11,157 @@
 \item {\red Actual 3D spatial distances can only be measured correctly if $\d t=0$\\
       (i.e. at the same time)}
 \item[] Due to the finite speed of light this is impossible for cosmological objects
-\item {\blue Can we find an observable which can be related to the physical distance $D$ ?}
+\item {\blue Can we find an observable which can be related to the physical distance ?}
 \item[] Use EM radiation for observations $\rightarrow \d s^{2} \equiv 0$
-\item[] Distant galaxies may show emission/absorbtion lines $\rightarrow$ {\blue Use redshift $z$ as observable}
-\item[$\ast$] {\red Can we relate the observed redshift $z$ to the physical distance $D$ ?}
-\item[] Consider a galaxy at comoving radial coordinate $\sigma=\sigma_{e}$ which emits a signal at $t=t_{e}$
-\item[] At the Earth $(\sigma \equiv 0)$ the signal is observed at $t=t_{o}$
+\item[] Distant objects may show emission/absorbtion lines $\rightarrow$ {\blue Use redshift $z$ as observable}
+\item[$\ast$] {\red Can we relate the observed redshift $z$ to the physical distance of the object ?}
+\item[] Consider the case that we observe at $t=t_{o}$ a light signal from a distant source that was emitted
+        at some time $t<t_{o}$ 
 \end{itemize}
 
 \Tr
 \begin{itemize}
-\item Robertson-Walker for a flat universe
-      $\displaystyle \rightarrow {\blue \int_{t_{e}}^{t_{o}} \frac{c}{a(t)}\,\d t=\int_{\sigma_{e}}^{0} \d\sigma}$
-\item For the observed redshift we have :
+\item Robertson-Walker for a flat universe~: $\displaystyle \d s^{2}=0
+      \rightarrow {\blue \d\sigma=\frac{c}{a(t)}\,\d t} \qquad (1)$
+\item For the cosmological redshift we have :
       $\displaystyle z(t)=\frac{a(t_{o})}{a(t)}-1
        \rightarrow \frac{\d z}{\d t}=\frac{-a(t_{0})\dot{a}(t)}{a^{2}(t)}$
-\item[] Replacing $\d t \rightarrow \d z$ the above integrals yield
-        {\blue $\displaystyle \sigma_{e}=\frac{c}{a(t_{o})}
-        \int_{z(t_{e})}^{z(t_{o})} \left(\frac{a(t)}{\dot{a}(t)}\right) \d z$}
+\item[] Substitution of $\displaystyle \d t=\frac{-a^{2}(t)}{a(t_{o})\dot{a}(t)}\,\d z$ in (1) yields~:
+        ${\blue \displaystyle \d\sigma=\frac{c}{a(t_{o})}\cdot\frac{a(t)}{\dot{a}(t)}\,\d z} \qquad (2)$
 \item Friedmann-LeMa\^{i}tre for a flat universe : {\red $\displaystyle
       \left[\frac{\dot{a}(t)}{a(t)}\right]^{2}=\frac{8\pi G\rho(t)}{3}+\frac{\Lambda}{3}$}
 \item[$\ast$] Total energy conservation within a comoving volume : $\rho(t)a^{3}(t)=\rho(t_{o})a^{3}(t_{o})$
 \item[] Flat matter-dominated universe : $\rho(t_{o})=\rho_{c,0}\,\Omega_{M} \rightarrow$
        {\blue $\displaystyle \rho(t)=\left(\frac{a(t_{o})}{a(t)}\right)^{3}\frac{3H_{0}^{2}}{8\pi G}\Omega_{M}$}
-\item[] Using {\blue $\Lambda=3H_{0}^{2}\,\Omega_{\Lambda}$} we obtain : {\red $\displaystyle
+\item[] Using {\blue $\Lambda=3H_{0}^{2}\,\Omega_{\Lambda}$} we obtain : ${\red \displaystyle
         \left[\frac{\dot{a}(t)}{a(t)}\right]^{2}
-        =H_{0}^{2} \left[\Omega_{M}\left(\frac{a(t_{o})}{a(t)}\right)^{3}+\Omega_{\Lambda}\right]$}
+        =H_{0}^{2} \left[\Omega_{M}\left(\frac{a(t_{o})}{a(t)}\right)^{3}+\Omega_{\Lambda}\right]} \qquad (3)$
 \end{itemize}
 
 \Tr
 \begin{itemize}
-\item Using {\blue $\displaystyle \frac{a(t_{o})}{a(t)}=1+z$} the {\red Friedmann-Lema\^{i}tre equation
-      for a flat universe} becomes :
+\item Using {\blue $\displaystyle \frac{a(t_{o})}{a(t)}=1+z$} in (3) yields for the Friedmann-LeMa\^{i}tre equation~:
 \item[] \begin{center}
         {\red \shabox{$\displaystyle
         \left[\frac{\dot{a}(t)}{a(t)}\right]^{2}
-        =H_{0}^{2} \left[\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}\right]$}}
+        =H_{0}^{2} \left[\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}\right] \qquad (4)$}}
         \end{center}
-\item From before we had {\blue $\displaystyle \sigma_{e}=\frac{c}{a(t_{o})}
-                            \int_{z(t_{e})}^{z(t_{o})} \left(\frac{a(t)}{\dot{a}(t)}\right) \d z$}
-      so that we finally obtain :
+\item Combination of (2) and (4) yields~:
 \item[] \begin{center}
-        {\red \shabox{$\displaystyle \sigma_{e}(z_{obs})=\frac{c}{a(t_{o})H_{0}}
-         \int_{0}^{z_{obs}}\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\, \d z$}}
+        {\blue \shabox{$\displaystyle \d\sigma=
+         \frac{c}{a(t_{o})H_{0}}\cdot\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\,\d z \qquad (5)$}}
         \end{center}
-\item The {\blue physical distance $D(z)$} is obtained from $D(t)=a(t)\,\sigma$ yielding
+\item Combination of (1) and (5) yields~:
+        $\displaystyle c\,\d t=
+         \frac{c}{H_{o}}\cdot\frac{a(t)}{a(t_{o})}\cdot\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\,\d z$
 \item[] \begin{center}
-        {\red \shabox{$\displaystyle D(z_{obs})=\frac{c}{H_{0}}
-         \int_{0}^{z_{obs}}\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\, \d z$}}
+        {\blue \shabox{$\displaystyle c\,\d t=
+         \frac{c}{H_{o}}\cdot\frac{1}{(1+z)}\cdot\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\,\d z \qquad (6)$}}
         \end{center}
-\item[] Note : It is customary to "calibrate" the scale by setting $a(t_{o})=a_{0} \equiv 1$
+\item[] \colorbox{yellow}{The equations (5) and (6) provide the basis to define various cosmological distances}
+\end{itemize}
+
+\Tr
+\onecolumn
+\begin{center}
+{\red Definitions of cosmological distances between source and observer}
+\end{center}
+% 
+\begin{itemize}
+\item[$\ast$] Light emitted at $(\sigma_{e},t_{e})$ is observed at $(0,t_{o})$ with a redshift $z_{o}$
+\item[] Various cosmological distances could be of interest in studying the source
+\begin{itemize}
+\item What was the physical distance when the light was emitted ?
+\item What is the physical distance when the light is observed ?
+\item How long has the light traveled before it reached us ?
+\item What is the luminosity of the source based on the observed flux ?
+\end{itemize}
+\item The {\blue Comoving Distance $D_{C}$}~: This is the (constant) distance in comoving coordinates
+\item[] $\displaystyle D_{C}=\sigma_{e}=\int_{0}^{\sigma_{e}}\d\sigma$ and using (5) yields~:
+\item[] \begin{center}
+        {\red \shabox{$\displaystyle D_{C}(z_{o})=\frac{c}{a(t_{o})H_{0}}
+         \int_{0}^{z_{o}}\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\, \d z$}}
+        \end{center}
+\item[] Note : It is customary to "calibrate" the "$\sigma$-scale" by defining $a(t_{o}) \equiv 1$
+\end{itemize}
+
+\Tr
+\onecolumn
+\begin{itemize}
+\item The {\blue Proper Distance $D_{P}$}~: (also called {\blue Physical Distance})
+\item[] This is the (time-dependent) distance that would be measured by a ruler\\
+        at a specific time $t \leq t_{o}$. In other words~: {\blue $D_{P}(t)=a(t)D_{C}$}
+\item[] $\rightarrow \displaystyle {\blue D_{P}(t,z_{o})=\frac{a(t)}{a(t_{o})}\cdot\frac{c}{H_{0}}
+         \int_{0}^{z_{o}}\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\, \d z}$
+\item[] So, $D_{P}(t)$ represents the physical distance of $D_{C}$ at a specific time $t$ in the past
+\item[$\ast$] We get for the {\blue Proper Distance at the time of observation $D_{P}(t_{o},z_{o})$}~:
+\item[] \begin{center}
+        {\red \shabox{$\displaystyle D_{P}(t_{o},z_{o})=\frac{c}{H_{0}}
+         \int_{0}^{z_{o}}\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\, \d z$}}
+        \end{center}
+\item[] and for the {\blue Proper Distance at the time of emission $D_{P}(t_{e},z_{o})$}~:
+\item[] \begin{center}
+        {\red \shabox{$\displaystyle D_{P}(t_{e},z_{o})=\frac{1}{(1+z_{o})}\cdot\frac{c}{H_{0}}
+         \int_{0}^{z_{o}}\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\, \d z$}}
+        \end{center}
+\item[$\ast$] With $a(t_{o}) \equiv 1 \rightarrow
+        D_{P}(t_{o},z_{o})=D_{C}(z_{o})$ and $D_{P}(t_{e},z_{o})=\frac{D_{C}(z_{o})}{(1+z_{o})}$
+\end{itemize}
+
+\Tr
+\onecolumn
+\begin{itemize}
+\item The {\blue Light Travel Distance $D_{LT}$}~:
+\item[] This is the distance that light has traveled to reach us from an object with redshift $z_{o}$
+\item[] $\displaystyle D_{LT}=\int_{t_{e}}^{t_{o}} c\,dt$ which yields with (6)~:
+\item[] \begin{center}
+        {\red \shabox{$\displaystyle D_{LT}(z_{o})=\frac{c}{H_{0}}
+         \int_{0}^{z_{o}}\frac{1}{(1+z)}\cdot\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\, \d z$}}
+        \end{center}
+\item[$\ast$] The {\blue Size of the Universe $R_{U}$} can be expressed by {\blue $R_{U}=D_{LT}(z=\infty)$} 
+\item The {\blue Light Travel Time $T_{L}$} is defined as~: {\blue $T_{L}(z_{o})=D_{LT}(z_{o})/c$}
+\item[] So we have~:
+\item[] \begin{center}
+        {\red \shabox{$\displaystyle T_{L}(z_{o})=\frac{1}{H_{0}}
+         \int_{0}^{z_{o}}\frac{1}{(1+z)}\cdot\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\, \d z$}}
+        \end{center}
+\item[$\ast$] Note~: {\blue $T_{L}$} is also called the {\blue Look Back Time}
+\item[$\ast$] The {\blue Age of the Universe $T_{U}$} can be expressed by {\blue $T_{U}=T_{L}(z=\infty)$} 
+\end{itemize}
+
+\Tr
+\onecolumn
+\begin{itemize}
+\item The {\blue Luminosity Distance $D_{L}$}~:
+\item[] This is the distance relating the intrinsic source luminosity ($L$) to the observed flux ($F$)
+\item[$\ast$] Consider a source with an intrinsic luminosity of $L$ (erg sec$^{-1}$) of which we observe\\
+              a flux $F$ (erg sec$^{-1}$ cm$^{-2}$) $\qquad \qquad$ Note~: 1 erg=$10^{-7}$ J
+\item[$\ast$] Definition of luminosity distance~: {\blue $\displaystyle F=\frac{L}{4\pi D^{2}_{L}}$}
+\item[] Concerning the observed flux $F$ we have the following cosmological effects
+\begin{itemize}
+\item Wavelength stretching $\rightarrow$ The observed energy is reduced by a factor $(1+z_{o})$
+\item Time dilation $\rightarrow$ The observational time intervals are stretched by a factor $(1+z_{o})$
+\item We should of course use the physical distance at the time of observation
+\end{itemize}
+\item[$\ast$] So we have {\blue $\displaystyle F=\frac{L}{4\pi D^{2}_{L}}=
+                                  \frac{L}{4\pi (1+z_{o})^{2}D^{2}_{P}(t_{o},z_{o})}$} yielding~:
+\item[] \begin{center}
+        {\red \shabox{$\displaystyle D_{L}=(1+z_{o})D_{P}(t_{o},z_{o})=(1+z_{o})\cdot\frac{c}{H_{0}}
+         \int_{0}^{z_{o}}\frac{1}{\sqrt{\Omega_{M}\,(1+z)^{3}+\Omega_{\Lambda}}}\, \d z$}}
+        \end{center}
+\end{itemize}
+
+\Tr
+\onecolumn
+\begin{itemize}
+\item[] \begin{center}{\red Some notes about the Luminosity Distance $D_{L}$}\end{center}
+\item In case the observed {\blue Fluence $S$} (=time-integrated flux in erg/cm$^{2}$) is used in an analysis
+\item[] one has to use $\sqrt{(1+z_{o})} \cdot D_P(t_{o},z_{o})$ as the corresponding distance
+\item $D_{L}$ also relates the {\blue absolute magnitude $M$} of an astronomical object
+\item[] to its observed {\blue apparent magnitude $m$} via~:
+\item[] \begin{center}
+        {\red \shabox{$\displaystyle M=m-5[^{10}\log(D_{L})-1] \quad \rightarrow \quad D_{L}=10^{[1+(m-M)/5]}$}}
+        \end{center}
+\item[] where $[D_{L}]$=parsec $({\rm pc})$ and
+        $1\,{\rm pc} \approx 3.09 \cdot 10^{16}\,{\rm m} \approx$ 3.26 light year $({\rm ly})$
 \end{itemize}
